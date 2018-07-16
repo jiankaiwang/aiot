@@ -32,5 +32,8 @@ The following is the map of all pins in raspberry pi 3 model b.
 * Raspberry Pi Model B
   * Environment Settings
 * [Movidius Neural Compute Stick](movidius/README.md)
+  * [Tensorflow](README.md)
 * Video Streaming
   * [mjpg_streamer](mjpg_streamer/README.md)
+  * [ffmpeg](ffmpeg/README.md)
+
