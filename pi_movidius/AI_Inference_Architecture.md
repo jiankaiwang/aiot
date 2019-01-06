@@ -6,7 +6,7 @@
 
 The following is the map of all pins in raspberry pi 3 model b.
 
-![](C:/Users/acer4755g/Google_Drive_Devops_Sync/aiot/images/pi3b_pin.jpg)
+![](../assert/images/pi3b_pin.jpg)
 
 
 
@@ -14,4 +14,4 @@ The following is the map of all pins in raspberry pi 3 model b.
 
 The following is the basic AIoT architecture.
 
-![](../images/architecture.jpg)
+![](../assert/images/architecture.jpg)
