@@ -7,6 +7,8 @@
 
 ## Cross Compiling
 
+
+
 ```sh
 # install toolchain
 sudo apt-get update
@@ -28,7 +30,14 @@ sudo bash ./tensorflow/contrib/lite/tools/make/download_dependencies.sh
 tensorflow/contrib/lite/tools/make/gen/lib/rpi_armv7/libtensorflow-lite.a
 ```
 
+
+
+
+
 ## Naive Compiling
+
+
+### Older Version
 
 ```sh
 # install toolchain
@@ -37,8 +46,11 @@ cd ~
 git clone https://github.com/tensorflow/tensorflow.git
 cd tensorflow
 
+# switch to the specific branch
 # only need to execute the command once
-sudo bash ./tensorflow/contrib/lite/tools/make/download_dependencies.sh
+git branch --list --all
+git checkout remotes/origin/r1.12
+bash ./tensorflow/contrib/lite/tools/make/download_dependencies.sh
 
 # compile
 ./tensorflow/contrib/lite/tools/make/build_rpi_lib.sh
@@ -47,7 +59,26 @@ sudo bash ./tensorflow/contrib/lite/tools/make/download_dependencies.sh
 tensorflow/contrib/lite/tools/make/gen/lib/rpi_armv7/libtensorflow-lite.a
 ```
 
+### Newer Version
 
-```python
+```sh
+# install toolchain
+sudo apt-get install build-essential
+cd ~
+git clone https://github.com/tensorflow/tensorflow.git
+cd tensorflow
 
+# the master branch
+git checkout master
+
+# download necessary requirements
+chmod +x ./tensorflow/lite/tools/make/download_dependencies.sh
+./tensorflow/lite/tools/make/download_dependencies.sh
+
+# compile
+chmod +x ./tensorflow/lite/tools/make/build_rpi_lib.sh
+./tensorflow/lite/tools/make/build_rpi_lib.sh
+
+/home/pi/devops/tensorflow/tensorflow/lite/tools/make/gen/rpi_armv7l/obj/tensorflow/lite
 ```
+
