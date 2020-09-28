@@ -54,7 +54,7 @@ You can now provide a pretrained model as the input and convert it into IR (inte
     cd /opt/intel/computer_vision_sdk_2018.5.455/deployment_tools/model_optimizer/
     # the basic format as 
     # python3 mo.py --input_model <INPUT_MODEL>
-    python3 mo.py --input_model /path/to/model/model.pb --framework tf --input Placeholder:0 --output final_result --input_shape [1,128,128,3]
+    python3 mo.py --input_model /path/to/model/model.pb --framework tf --input Placeholder --output final_result --input_shape [1,128,128,3]
     ```
 
     After optimizing the model, two main components, IR (.xml) and data (.bin), are generated. 
