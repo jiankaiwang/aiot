@@ -1,38 +1,37 @@
-Jetson TX2
-==========
+# Jetson TX2
 
-Preparation
------------
+## Preparation
 
--   OS and CUDA Installation:
-    https://jkjung-avt.github.io/opencv3-on-tx2/
+* OS and CUDA Installation: 
+https://jkjung-avt.github.io/opencv3-on-tx2/
 
--   OpenCV Installation: https://jkjung-avt.github.io/opencv3-on-tx2/
+* OpenCV Installation: 
+https://jkjung-avt.github.io/opencv3-on-tx2/
 
-    -   solve the **gl.h** issue
+  * solve the **gl.h** issue
 
-    ``` {.cpp}
-    # in /usr/local/cuda-9.0/include/cuda_gl_interop.h 
+```cpp
+# in /usr/local/cuda-9.0/include/cuda_gl_interop.h 
 
-    /* comment the following sections
-    #if defined(__arm__) || defined(__aarch64__)
-    #ifndef GL_VERSION
-    #error Please include the appropriate gl headers before including cuda_gl_interop.h
-    #endif
-    #else
-    #include <GL/gl.h>
-    #endif
-    */
+/* comment the following sections
+#if defined(__arm__) || defined(__aarch64__)
+#ifndef GL_VERSION
+#error Please include the appropriate gl headers before including cuda_gl_interop.h
+#endif
+#else
+#include <GL/gl.h>
+#endif
+*/
 
-    // add the resource directly
-    #include <GL/gl.h>
-    ```
+// add the resource directly
+#include <GL/gl.h>
+```
 
--   **TensorFlow** Installation:
+* TensorFlow Installation:
 
 Dependency Installation:
 
-``` {.bash}
+```sh
 #install dependencies
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
@@ -43,7 +42,7 @@ sudo apt install python3-numpy python3-dev python3-pip python3-wheel
 
 Installing Bazel:
 
-``` {.bash}
+```sh
 bazel_version=0.10.0
 wget https://github.com/bazelbuild/bazel/releases/download/$bazel_version/bazel-$bazel_version-dist.zip
 unzip bazel-$bazel_version-dist.zip -d bazel-dist
@@ -55,7 +54,7 @@ sudo cp output/bazel /usr/local/bin
 
 Installing Tensorflow:
 
-``` {.bash}
+```sh
 git clone --recursive https://github.com/tensorflow/tensorflow.git
 cd tensorflow
 git checkout v1.7.0
@@ -63,7 +62,7 @@ git checkout v1.7.0
 
 Edit the environment setting (for this installarion only):
 
-``` {.bash}
+```sh
 export PYTHON_BIN_PATH=$(which python3)
 
 # No Google Cloud Platform support
@@ -98,42 +97,42 @@ export TF_ENABLE_XLA=1
 
 Configure the tensorflow installation:
 
-``` {.bash}
+```sh
 ./configure
 ```
 
 Compile the resource:
 
-``` {.bash}
+```sh
 bazel build -c opt --verbose_failures --config=cuda //tensorflow/tools/pip_package:build_pip_package
 ```
 
 Package the installation:
 
-``` {.bash}
+```sh
 bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
 ```
 
 Move the wheel file to the directory for installation:
 
-``` {.bash}
+```sh
 mv /tmp/tensorflow_pkg/tensorflow-1.7.0*-linux_aarch64.whl ../
 ```
 
 Install the wheel file:
 
-``` {.bash}
+```sh
 cd ..
 sudo pip install tensorflow-1.7.0-cp35-cp35m-linux_aarch64.whl
 ```
 
 Test the installation:
 
-``` {.bash}
+```sh
 vim test_tensorflow.py
 ```
 
-``` {.python}
+```python
 #!/usr/bin/env python 
 
 import tensorflow as tf
@@ -142,11 +141,11 @@ sess = tf.Session()
 print(sess.run(hello))
 ```
 
-``` {.bash}
+```sh
 python test_tensorflow.py
 ```
 
-Reference:
+## Reference
 
--   Pre-Built: https://github.com/jetsonhacks/installTensorFlowJetsonTX
--   Source: https://github.com/jetsonhacks/installTensorFlowTX2
+* Pre-Built: https://github.com/jetsonhacks/installTensorFlowJetsonTX
+* Source: https://github.com/jetsonhacks/installTensorFlowTX2

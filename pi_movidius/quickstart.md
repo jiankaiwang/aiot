@@ -1,31 +1,22 @@
 # Quick Start
 
-
-
-
-*   **Reference**
-    *   Developer: https://developer.movidius.com/start
-    *   Document: https://movidius.github.io/ncsdk
-    *   github: https://github.com/movidius/ncsdk
-
-
-
-
+* Reference
+  * Developer: https://developer.movidius.com/start
+  * Document: https://movidius.github.io/ncsdk
+  * github: https://github.com/movidius/ncsdk
 
 ## 作業系統更新
 
-
-
-*   Raspberry Pi  需更新至 stretch 9
-    *   https://linuxconfig.org/raspbian-gnu-linux-upgrade-from-jessie-to-raspbian-stretch-9
-*   Ubuntu: `sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get autoremove -y`
-
-
-
+* Raspberry Pi  需更新至 stretch 9
+  * https://linuxconfig.org/raspbian-gnu-linux-upgrade-from-jessie-to-raspbian-stretch-9
+  * Ubuntu  
+```sh
+sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get autoremove -y
+```
 
 ## 安裝 NCS SDK
 
-```bash
+```sh
 $ cd ~
 $ mkdir -p ./workspace
 $ cd ./workspace
@@ -45,34 +36,25 @@ $ make help
 ```
 
 
-
 ## NCS 範例
 
-
-
-[**Source Code**] 安裝 OpenCV 於 ARM, Raspberry Pi 等。
+**Source Code** 安裝 OpenCV 於 ARM, Raspberry Pi 等。
 
 [https://github.com/ys7yoo/PiOpenCV](github.com/ys7yoo/PiOpenCV)
 
-
-
-[**Ubuntu**] 安裝 Tensorflow==1.4。
+**Ubuntu** 安裝 Tensorflow==1.4。
 
 ```bash
 $ wget https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.4.0-cp35-cp35m-linux_x86_64.whl
 $ pip3 install tensorflow-1.4.0-cp35-cp35m-linux_x86_64.whl
 ```
 
-
-
-[**Raspberry Pi 3**] 安裝 Tensorflow==1.4。
+**Raspberry Pi 3** 安裝 Tensorflow==1.4。
 
 ```bash
 $ wget https://github.com/lhelontra/tensorflow-on-arm/releases/download/v1.4.0/tensorflow-1.4.0-cp35-none-linux_armv7l.whl
 $ sudo pip3 install tensorflow-1.4.0-cp35-none-linux_armv7l.whl
 ```
-
-
 
 **Notice**: 將 Movidius 連接裝置。
 
@@ -98,11 +80,7 @@ $ make run
 $ vim ./hello_ncs.py
 ```
 
-
-
 ## NCS 與 DL 框架範例
-
-
 
 **Caffe** 範例
 
@@ -131,8 +109,6 @@ $ make run_py
 # the top inference results are output
 $ make run_cpp
 ```
-
-
 
 **Tensorflow** 範例
 
