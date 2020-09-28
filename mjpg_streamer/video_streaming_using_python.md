@@ -1,10 +1,6 @@
 # Video Streaming using Python
 
-
-
 ## Start video streaming
-
-
 
 ```shel
 mjpg_streamer -i "input_uvc.so -d /dev/video0 -y -r 640x480 -f 60 -n" -o "output_http.so -p 8080 -w /opt/code/mjpg_streamer/www"
@@ -12,11 +8,7 @@ mjpg_streamer -i "input_uvc.so -d /dev/video0 -y -r 640x480 -f 60 -n" -o "output
 
 You can check whether the video streaming works by surfing the webpage http://localhost:8080/.
 
-
-
 ## Capture the Streaming
-
-
 
 The following is the example to capture the streaming by using python.
 

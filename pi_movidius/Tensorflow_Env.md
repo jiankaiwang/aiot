@@ -1,25 +1,17 @@
 # Quick Start
 
-
-
 Please make sure you have already set up Movidius execution environment.
 
-
-
 ## Installing Tensorflow
-
-
 
 ### Version r1.4
 
 Remind you that tensorflow package installed is not from the official one.
 
-```bash
+```sh
 $ wget https://github.com/lhelontra/tensorflow-on-arm/releases/download/v1.4.0/tensorflow-1.4.0-cp35-none-linux_armv7l.whl
 $ sudo pip3 install tensorflow-1.4.0-cp35-none-linux_armv7l.whl
 ```
-
-
 
 ### Version r1.11
 
@@ -37,7 +29,6 @@ Now you can download and install tensorflow via pip.
 ```sh
 pip3 install tensorflow
 ```
-
 
 
 ### Version r1.12 (Build from source)
@@ -108,8 +99,6 @@ CI_DOCKER_EXTRA_PARAMS="-e CI_BUILD_PYTHON=python3 -e CROSSTOOL_PYTHON_INCLUDE_P
     tensorflow/tools/ci_build/pi/build_raspberry_pi.sh
 ```
 
-
-
 ### **Tensorflow** 範例
 
 **Notice**: 將 Movidius 連接裝置。
@@ -131,11 +120,7 @@ $ make all
 $ python run.py
 ```
 
-
-
 ## Installing OpenCV
-
-
 
 [**Source Code**] 安裝 OpenCV 於 ARM, Raspberry Pi 等。
 

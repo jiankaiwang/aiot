@@ -7,8 +7,6 @@
 
 ## Cross Compiling
 
-
-
 ```sh
 # install toolchain
 sudo apt-get update
@@ -30,12 +28,7 @@ sudo bash ./tensorflow/contrib/lite/tools/make/download_dependencies.sh
 tensorflow/contrib/lite/tools/make/gen/lib/rpi_armv7/libtensorflow-lite.a
 ```
 
-
-
-
-
 ## Naive Compiling
-
 
 ### Older Version
 

@@ -1,10 +1,6 @@
 # Quick Start
 
-
-
 ## Preparation
-
-
 
 * Install necessary packages.
 
@@ -14,9 +10,6 @@ sudo apt-get install subversion
 sudo apt-get install libjpeg8-dev
 sudo apt-get install imagemagick
 ```
-
-
-
 * Download the source code, compile it, and install it.
 
 ```shell
@@ -37,8 +30,6 @@ source ~/.bashrc
 
 After installing is complete, the execution file would exist on `/usr/local/bin`. And lots of shared file `.so` would also be generated, including `input_file.so`, `input_uvc.so`, `output_file.so`, `output_http.so`, `output_udp.so`, etc.
 
-
-
 ## Start Video Streaming
 
 * Check the device status.
@@ -50,8 +41,6 @@ lssub
 # check the webcam is ready
 ls -al /dev/video0
 ```
-
-
 
 * Start the video streaming.
 

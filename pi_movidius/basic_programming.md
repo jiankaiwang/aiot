@@ -1,18 +1,12 @@
 # Basic Programming on NCS
 
-
-
 The following is the example that can
 
 - list the names for all devices plugged into the system
 - assign the device what you are desired to use
 - try to open and close the deivce
 
-
-
 ## C++
-
-
 
 * c++ file (named `hello_ncs.cpp`)
 
@@ -68,8 +62,6 @@ int main(int argc, char** argv)
 }
 ```
 
-
-
 * compiler, linker, and executing
 
 ```shell
@@ -77,11 +69,7 @@ g++ cpp/hello_ncs.cpp -o cpp/hello_ncs_cpp -l mvnc
 cpp/hello_ncs_cpp
 ```
 
-
-
 ## Python3
-
-
 
 * python script (named `hello_ncs.py`)
 
@@ -127,8 +115,6 @@ if __name__=="__main__":
     print("Goodbye NCS! Device closed normally.")
     print("NCS device working.")
 ```
-
-
 
 * the shell to run the script
 
