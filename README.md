@@ -1,5 +1,7 @@
 # AIoT : AI + IoT
 
+[![](https://img.shields.io/badge/doc-stable-green)](README.md)
+
 In this repository, we introduce several edge-AI platforms and demonstrate how to use them from scratch. Most of them are expanded from the concept of IoT.
 
 In the following, we focus on several famous platforms, that are Intel OpenVINO, Movidius NCS stick, Coral Edge TPU with Google, and Nvidia Jetson series.
@@ -41,6 +43,12 @@ OpenVINO is a toolkit to leverage the Intel processors with the capability of de
 Jetson series are provided and supported by NVidia and target the solution of the edge AI. However, nowadays edge AI is a highly complex field. NVidia provides different products addressing different issues, like from Jetson Tx2 to Jetson nano, etc.
 
 * Setup Tensorflow Environment on Jetson Nano: [MD](tx2/jetson_tx2_quickstart.md)
+
+### Edge TPU
+
+Tensor Processing Unit (TPU) is designed by Google. There are two types of TPU, they are Cloud TPU and Edge TPU. In this repository, we primarily address the Edge TPU. The way of developing edge TPU is wrapped as the `Coral` toolkit. Coral is a complete toolkit to build local AI products.
+
+* Flow of creating a model: [MD](edgetpu/create_models.md)
 
 ### Video Streaming
 
