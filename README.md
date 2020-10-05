@@ -42,7 +42,15 @@ OpenVINO is a toolkit to leverage the Intel processors with the capability of de
 
 Jetson series are provided and supported by NVidia and target the solution of the edge AI. However, nowadays edge AI is a highly complex field. NVidia provides different products addressing different issues, like from Jetson Tx2 to Jetson nano, etc.
 
-* Setup Tensorflow Environment on Jetson Nano: [MD](tx2/jetson_tx2_quickstart.md)
+* Setup Tensorflow Environment on Jetson Nano: [MD](jetson/jetson_tx2_quickstart.md)
+
+### TensorRT
+
+Nvidia also provides an advanced SDK for high-performance deep learning inference, TensorRT. The following are topics about how to program via this platform.
+
+* MINST Example from Training to Inference on TensorRT
+  * Training via Tensorflow 2 and Convertion to TensorRT: [MD](tensorrt/trainingMNIST.md)
+  * Inference on TensorRT-supported accelerators: [notebook](tensorrt/TensorRTInference.html)
 
 ### Edge TPU
 
