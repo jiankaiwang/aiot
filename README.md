@@ -50,7 +50,7 @@ Nvidia also provides an advanced SDK for high-performance deep learning inferenc
 
 * MINST Example from Training to Inference on TensorRT
   * Training via Tensorflow 2 and Convertion to TensorRT: [MD](tensorrt/trainingMNIST.md)
-  * Inference on TensorRT-supported accelerators: [notebook](tensorrt/TensorRTInference.html)
+  * Inference on TensorRT-supported accelerators: [notebook](tensorrt/TensorRTInference.ipynb)
 
 ### Edge TPU
 
