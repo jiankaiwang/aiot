@@ -49,6 +49,7 @@ Jetson series are provided and supported by NVidia and target the solution of th
 Tensor Processing Unit (TPU) is designed by Google. There are two types of TPU, they are Cloud TPU and Edge TPU. In this repository, we primarily address the Edge TPU. The way of developing edge TPU is wrapped as the `Coral` toolkit. Coral is a complete toolkit to build local AI products.
 
 * Flow of creating a model: [MD](edgetpu/create_models.md)
+* Flow of running a model: [MD](edgetpu/inference_with_models.md)
 
 ### Video Streaming
 
