@@ -52,6 +52,23 @@ Nvidia also provides an advanced SDK for high-performance deep learning inferenc
   * Training via Tensorflow 2 and Convertion to TensorRT: [MD](tensorrt/trainingMNIST.md)
   * Inference on TensorRT-supported accelerators: [notebook](tensorrt/TensorRTInference.ipynb)
 
+### Tensorflow Lite
+
+Tensorflow Lite is a solution provided by Google and targets the inference on the edge, local, or resource-limited devices.
+
+#### Tensorflow 2.x
+
+* Convert a MNIST model in SavedModel format to Tensorflow Lite: [notebook](tensorflowlite/tf2lite_savedmodel.ipynb)
+
+#### Tensorflow 1.x
+
+> Some of the following topics are inherited from the [Sophia](https://github.com/jiankaiwang/sophia) project.
+
+* API introduction and convertion: [notebook](tensorflowlite/TensorflowLite_API.ipynb)
+* Advanced convertion and network editing via shell commands: [notebook](tensorflowlite/TensorflowLite_CommandLine.ipynb)
+* A flow from convertion to doing an inference: [notebook](tensorflowlite/TFLite_FromFrozenModel_Inference.ipynb)
+* Editing Network and Convert to TFLite: [notebook](tensorflowlite/NetworkEditing_TFLite_Keras.ipynb)
+
 ### Edge TPU
 
 Tensor Processing Unit (TPU) is designed by Google. There are two types of TPU, they are Cloud TPU and Edge TPU. In this repository, we primarily address the Edge TPU. The way of developing edge TPU is wrapped as the `Coral` toolkit. Coral is a complete toolkit to build local AI products.
@@ -61,10 +78,10 @@ Tensor Processing Unit (TPU) is designed by Google. There are two types of TPU, 
 
 ### Video Streaming
 
-* MJPG Streamer
-  * Environment Setting on Pi : [MD](mjpg_streamer/quickstart.md)
-  * Streaming via python : [MD](mjpg_streamer/video_streaming_using_python.md)
+#### MJPG Streamer
+* Environment Setting on Pi : [MD](mjpg_streamer/quickstart.md)
+* Streaming via python : [MD](mjpg_streamer/video_streaming_using_python.md)
 
-* FFmpeg
-  * Environment Setting on Pi : [MD](ffmpeg/quickstart.md)
+#### FFmpeg
+* Environment Setting on Pi : [MD](ffmpeg/quickstart.md)
 
