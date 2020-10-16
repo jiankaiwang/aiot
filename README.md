@@ -75,6 +75,7 @@ Tensor Processing Unit (TPU) is designed by Google. There are two types of TPU, 
 
 * Flow of creating a model: [MD](edgetpu/create_models.md)
 * Flow of running a model: [MD](edgetpu/inference_with_models.md)
+* Edge TPU Compiler on Docker: [Dockerfile](edgetpu/Dockerfile)
 
 ### Video Streaming
 
