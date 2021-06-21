@@ -2,7 +2,7 @@
 
 On this page, we are going to show how to create a model inherited from Tensorflow and running on the Edge TPU. In short, the Edge TPU executes a deep feed-forward neural network and supports only Tensorflow Lite models that are fully 8-bit quantized and then compiled specifically for the Edge TPU. The following figure shows the basic flow of creating a model running on the edge TPU.
 
-![](../assert/images/edgetpu_compile.png)
+![](../asset/images/edgetpu_compile.png)
 
 Refer to the Coral (2020), https://coral.ai/docs/edgetpu/models-intro/#compatibility-overview.
 

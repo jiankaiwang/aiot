@@ -20,7 +20,7 @@
 
 ## Model Optimizer 
 
-Please refer to webpage https://software.intel.com/en-us/articles/OpenVINO-ModelOptimizer , the basic concept is like the below image. ![Reference from https://software.intel.com/en-us/articles/OpenVINO-ModelOptimizer(2019)](https://software.intel.com/sites/default/files/managed/2a/fb/CVSDK_Flow.png)
+Please refer to webpage https://software.intel.com/en-us/articles/OpenVINO-ModelOptimizer , the basic concept is like the below image. ![https://software.intel.com/en-us/articles/OpenVINO-ModelOptimizer(2019)](../asset/images/openvino_model_optimizer.png)
 
 ### MO Script
 
