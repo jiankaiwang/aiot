@@ -19,8 +19,13 @@ OpenVINO is a toolkit to leverage the Intel processors for the capability of mod
 **[**Notice**] There is another famous framework called ONNX Runtime that is also available for utilizing Intel-based chips. However, the Onnx runtime can't utilize the Movidius devices.**
 
 * Preparation: [MD](openvino/openvino_workflow.md)
-* OpenVINO on Official Docker: [MD](openvino/inference_openvino_docker.md)
-  * Build the OpenVINO docker image on Raspberry Pi: [dockerfile](openvino/pi_for_openvino.dockerfile)
+* OpenVINO on Official Docker
+  * Build the OpenVINO 2020.03 docker image on Raspberry Pi for utilizing Movidius NCS: [dockerfile](openvino/pi_for_openvino.dockerfile)
+  * Build the OpenVINO toolkit (2018.R5) docker image on x86_64: [dockerfile](openvino/openvino_2018R5.dockerfile)  
+* Use OpenVINO by Python API
+  * The flow of using OpenVINO for inference: [MD](openvino/inference_openvino_docker.md)
+  * The vision example of person detection: [notebook](openvino/person-detection.ipynb)
+  * The text example of question answering using BERT: [notebook]
   
 ## Jetson Series
 
