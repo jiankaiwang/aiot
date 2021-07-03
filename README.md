@@ -67,9 +67,18 @@ Tensorflow Lite is a solution provided by Google and targets the inference on th
 
 Tensor Processing Unit (TPU) is designed by Google. There are two types of TPU, they are Cloud TPU and Edge TPU. In this repository, we primarily address the Edge TPU. The way of developing edge TPU is wrapped as the `Coral` toolkit. Coral is a complete toolkit to build local AI products.
 
-* Flow of creating a model: [MD](edgetpu/create_models.md)
-* Flow of running a model: [MD](edgetpu/inference_with_models.md)
-* Edge TPU Compiler on Docker: [Dockerfile](edgetpu/Dockerfile)
+For using Coral Edge TPU devices, two components are required. One is the Tensorflow Lite (TFLite) runtime (or you can use `PyCoral API` alternatively). The TFLite runtime helps you load the model and infer the data. The other is the shared library for accessing Edge TPU devices. In this repo, two types of resources can be built and deployed or installed furtherly. The way of building the TFLite runtime please refer to the above [`Tensorflow 2.x` section](https://github.com/jiankaiwang/aiot#tensorflow-2x). Running on the Edge TPU is basically divided into three steps. We also demo each of them in the following.
+
+* The first step is to compile the TFlite model. You need the edgetpu compiler for compiling the model.
+  * Edge TPU Compiler on Docker: [Dockerfile](edgetpu/edgetpu_compiler.dockerfile)
+  * Before running a model on the Edge TPU. You have to compile the Tensorflow Lite model into the format supported by the Edge TPU. That is the model in the full integer quantization. Flow of creating a model: [MD](edgetpu/create_models.md)
+
+* The second step is preparing the TFLite runtime and the shared library for accessing the Edge TPU. The following is the building example for the shared library of edge TPU. 
+  * Please refer to the tutorial ([MD](edgetpu/building_edgetpu_so.md)).
+  * The [dockerfile](edgetpu/libedgetpu.dockerfile) for building shared library for accessing the Edge TPU. [Dockerfile in Windows](edgetpu/Dockerfile.windows)
+
+* The third step is to run the optimized Tensorflow Lite model.
+  * Inference flow of using Edge TPU: [MD](edgetpu/inference_with_models.md)
 
 ## Video Streaming
 
