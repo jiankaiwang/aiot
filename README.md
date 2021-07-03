@@ -43,9 +43,14 @@ Nvidia also provides an advanced SDK for high-performance deep learning inferenc
 
 ## Tensorflow Lite
 
-Tensorflow Lite is a solution provided by Google and targets the inference on the edge, local, or resource-limited devices.
+Tensorflow Lite is a solution provided by Google and targets the inference on the edge, local, or resource-limited devices. In practical, Tensorflow Lite consists of two components. One is Tensorflow Lite runtime, and the other is model converted to the special format.
 
 ### Tensorflow 2.x
+
+* Prepare the Python package of Tensorflow Lite Runtime on different platforms. Follow the tutorial ([MD](tflite_runtime/)).
+  * Building the pypkg on general platforms via `bazel`. [dockerfile](tflite_runtime/tflite_runtime.dockerfile)
+  * Building the pypkg on general platforms via `cmake`. [dockerfile](tflite_runtime/tflite_runtime_pypkg.dockerfile)
+  * Building the pypkg on `arm 32-bit` platforms. [dockerfile](tflite_runtime/tflite_runtime_pypkg_arm32.dockerfile)
 
 * Convert a MNIST model in SavedModel format to Tensorflow Lite: [notebook](tensorflowlite/tf2lite_savedmodel.ipynb)
 
