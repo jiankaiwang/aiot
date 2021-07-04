@@ -25,7 +25,7 @@ OpenVINO is a toolkit to leverage the Intel processors for the capability of mod
 * Use OpenVINO by Python API
   * The flow of using OpenVINO for inference: [MD](openvino/inference_openvino_docker.md)
   * The vision example of person detection: [notebook](openvino/person-detection.ipynb)
-  * The text example of question answering using BERT: [notebook]
+  * The text example of question answering using BERT: [notebook](openvino/question-answering.ipynb)
   
 ## Jetson Series
 
